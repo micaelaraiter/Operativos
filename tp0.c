@@ -23,8 +23,8 @@ int main(void)
 
 
 		logger = iniciar_logger();
-		log_info(logger,"El Programa Funciona Correctamente"); // ejemplo de mensaje de info
-		log_warning(logger,"El Programa Encontro un error"); // ejemplo mensaje warning
+		//log_info(logger,"El Programa Funciona Correctamente"); // ejemplo de mensaje de info
+		//log_warning(logger,"El Programa Encontro un error"); // ejemplo mensaje warning
 
 		config = leer_config();
 		config_save(config);
@@ -34,15 +34,10 @@ int main(void)
 
 		/*---------------------------------------------------PARTE 3-------------------------------------------------------------*/
 
-		//antes de continuar, tenemos que asegurarnos que el servidor esté corriendo porque lo necesitaremos para lo que sigue.
 
-		//crear conexion
 
-		//enviar mensaje
 
-		//recibir mensaje
 
-		//loguear mensaje recibido
 
 		terminar_programa(conexion, logger, config);
 	}
