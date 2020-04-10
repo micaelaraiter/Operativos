@@ -34,7 +34,10 @@ int main(void)
 
 		/*---------------------------------------------------PARTE 3-------------------------------------------------------------*/
 
-
+		conexion = crear_conexion(ip,puerto);
+		enviar_mensaje("Hola",conexion);
+		liberar_conexion(conexion);
+		char* x =recibir_mensaje(conexion);
 
 
 
